@@ -3,13 +3,10 @@
     src: url("/home/josh/.fonts/ttf/Hack-Regular.ttf");
 }
 
-# change the name of the file path for your home directory
-@import url('file:///home/josh/.cache/wal/colors.css');
-
 :root {
     --font: "Roboto Mono";
-    --background; var(--wallpaper)  
-    --foreground; var(--foreground) !important;
+    --background: #0f0e17;
+    --foreground: #fffffe;
     --pink: #e53170;
     --red: #f25f4c;
     --orange: #ff8906;
