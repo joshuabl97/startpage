@@ -1,26 +1,19 @@
-@import url('file:///home/josh/.cache/wal/colors.css')
+@import "/home/josh/.cache/wal/colors.css";
 
 @font-face {
     font-family: "Hack";
     src: url("/home/josh/.fonts/ttf/Hack-Regular.ttf");
 }
 
- :root {
-    --font: "Hack-Regular";
-  /*  --background: var(--background) !important;
-    --foreground: var(--foreground) !important;
-    --color4: var(--color4);
-    --color10: #f25f4c;
-    --color7: var(--color10) !important;*/ 
-    --branch: 1px solid #a7a9be;
-} 
 
 html {
     font-size: 18px;
+    background: var(--wallpaper) !important;
+    font-weight: bold; 
 }
 
 body {
-    background: var(--background);
+    background-image: var(--wallpaper) !important;
 }
 
 .container {
@@ -28,11 +21,15 @@ body {
     top: 50%;
     left: 45%;
     transform: translate(-50%, -50%);
+    background: var(--color0); 
+    opacity: .65; 
+    padding: 20px; 
 }
 
 .prompt {
-    font-family: var(--font);
-    color: var(--foreground);
+    color: var(--color15);
+    font-size: 18px; 
+    font-weight: bold; 
 }
 
 .prompt~.prompt {
@@ -40,15 +37,14 @@ body {
 }
 
 span {
-    color: var(--color4);
+    color: var(--color15);
 }
 
 h1 {
     display: inline;
-    font-family: var(--font);
-    font-size: 1rem;
-    font-weight: normal;
-    color: var(--color10);
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--color15);
 }
 
 .tree > ul {
@@ -72,13 +68,13 @@ li::before, li::after {
 }
 
 li::before {
-    border-top: var(--branch);
+    border-top: 1px solid #a7a9be;
     top: 0.75rem;
     width: 0.5rem;
 }
 
 li::after {
-    border-left: var(--branch);
+    border-left: 1px solid #a7a9be;
     height: 100%;
     top: 0.25rem;
 }
@@ -107,7 +103,7 @@ form h1 {
 input {
     font-family: var(--font);
     font-size: 1rem;
-    color: var(--foreground);
-    background-color: var(--background);
+    color: var(--color15);
+    background-color: var(--color0);
     border: none;
 }
